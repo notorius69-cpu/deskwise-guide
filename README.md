@@ -18,9 +18,9 @@ python3 scripts/validate.py
 
 ## Publishing
 
-Sites identity is retained in `.openai/hosting.json`. Use the Sites skill for deployment; no credentials belong in the repository. GitHub remains a separate target remote. Do not claim GitHub synchronization until a push succeeds.
+Sites identity is retained in `.openai/hosting.json`. Use the Sites skill for deployment; no credentials belong in the repository. GitHub source was uploaded through the owner-authorized browser workflow after the connector rejected write access. The Sites publication remains the primary public website.
 
-A manual GitHub Pages workflow is included. Once repository write access is repaired, push this source, select **Settings → Pages → Source: GitHub Actions**, and run **Publish Deskwise Guide to GitHub Pages**. Public-repository standard GitHub-hosted runners and Pages are available on GitHub Free. Do not activate paid runners or change the repository to private as part of this flow. The workflow deliberately runs only on manual dispatch.
+A manual GitHub Pages workflow is included. For an optional GitHub Pages mirror, select **Settings → Pages → Source: GitHub Actions**, and run **Publish Deskwise Guide to GitHub Pages**. Public-repository standard GitHub-hosted runners and Pages are available on GitHub Free. Do not activate paid runners or change the repository to private as part of this flow. The workflow deliberately runs only on manual dispatch.
 
 The primary canonical origin remains the Sites URL. For a full move to GitHub Pages, set `DESKWISE_BASE_URL` to the Pages URL in the build, update the 404 home link for its subpath, and designate one primary domain. Do not submit two mirrors as independent publications.
 
