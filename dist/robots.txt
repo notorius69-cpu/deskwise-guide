@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://deskwise-guide.readyamber32.chatgpt.site/sitemap.xml
